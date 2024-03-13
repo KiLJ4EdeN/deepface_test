@@ -4,7 +4,7 @@ import shutil
 import numpy as np
 from distutils.dir_util import copy_tree
 
-BASE_PATH = '/home/parsa/Desktop/arman/bankwork/'
+BASE_PATH = '/home/asaeedi/Desktop/bankwork/'
 DATA_PATH = 'data'
 DATA_PATH = os.path.join(BASE_PATH, DATA_PATH)
 OUT_PATH = './not_verified'

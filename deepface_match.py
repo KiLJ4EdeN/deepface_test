@@ -26,7 +26,7 @@ target_size = rec.input_shape
 det = YuNet.YuNetClient()
 distance_metric = 'cosine'
 
-def verify2(emb1, img2_path, threshold=0.9):
+def verify2(emb1, img2_path, threshold=0.7):
     emb2 = predict_one(img2_path)
     # find the face pair with minimum distance
     # threshold = find_threshold(model_name, distance_metric)

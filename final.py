@@ -32,14 +32,14 @@ for uid in tqdm(uids):
     cap = cv2.VideoCapture(video_path)
     # add skipping value here.
     # process every 10 frames
-    process_this_frame = 59
+    process_this_frame = 19
     ret, frame = cap.read()
     verification_percentage = 0
     total_processed_frames = 0
     while ret:
         process_this_frame += 1
         ret, frame = cap.read()
-        if process_this_frame % 60 == 0:
+        if process_this_frame % 20 == 0:
             # do the compare
             try:
                 res = verify2(emb1, frame)
